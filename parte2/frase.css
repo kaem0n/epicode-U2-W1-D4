@@ -8,3 +8,105 @@
 7 ritardare progressivamente l'animazione delle altre 2 parole 
 */
 
+/* GENERAL SETTINGS */
+
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap');
+
+body {
+    font-family: 'Bree Serif', serif;
+    font-size: 1.3em;
+}
+
+main {
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#testoAlternato {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border: 2px solid gray;
+    line-height: 1.5;
+    padding: 1.2em;
+    width: 400px;
+}
+
+.parole {
+    position: relative;
+}
+
+i {
+    color:rgb(102, 131, 141);
+    position: absolute;
+    left: 3px;
+    white-space: nowrap;
+    opacity: 0;
+}
+
+/* ANIMATIONS */
+
+@keyframes cycle1 {
+    0% {
+        opacity: 0;
+        transform: translateY(35px);
+    }
+
+    50% {
+        opacity: 100;
+        transform: translateY(0);
+    }
+    
+    100% {
+        opacity: 0;
+        transform: translateY(-35px);
+    }
+}
+
+.cycle1 {
+    animation: cycle1 6s linear 0s infinite;
+}
+
+@keyframes cycle2 {
+    0% {
+        opacity: 0;
+        transform: translateY(35px);
+    }
+
+    50% {
+        opacity: 100;
+        transform: translateY(0);
+    }
+    
+    100% {
+        opacity: 0;
+        transform: translateY(-35px);
+    }
+}
+
+.cycle2 {
+    animation: cycle2 6s linear 2s infinite;
+}
+
+@keyframes cycle3 {
+    0% {
+        opacity: 0;
+        transform: translateY(35px);
+    }
+
+    50% {
+        opacity: 100;
+        transform: translateY(0);
+    }
+    
+    100% {
+        opacity: 0;
+        transform: translateY(-35px);
+    }
+}
+
+.cycle3 {
+    animation: cycle3 6s linear 4s infinite;
+}
