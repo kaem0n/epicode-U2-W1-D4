@@ -39,16 +39,16 @@ main {
 }
 
 i {
-    color:rgb(102, 131, 141);
     position: absolute;
-    left: 3px;
-    white-space: nowrap;
+    left: 5px;
+    color:rgb(102, 131, 141);
     opacity: 0;
+    white-space: nowrap;
 }
 
 /* ANIMATIONS */
 
-@keyframes cycle1 {
+@keyframes cycle {
     0% {
         opacity: 0;
         transform: translateY(35px);
@@ -66,47 +66,13 @@ i {
 }
 
 .cycle1 {
-    animation: cycle1 6s linear 0s infinite;
-}
-
-@keyframes cycle2 {
-    0% {
-        opacity: 0;
-        transform: translateY(35px);
-    }
-
-    50% {
-        opacity: 100;
-        transform: translateY(0);
-    }
-    
-    100% {
-        opacity: 0;
-        transform: translateY(-35px);
-    }
+    animation: cycle 6s linear 0s infinite;
 }
 
 .cycle2 {
-    animation: cycle2 6s linear 2s infinite;
-}
-
-@keyframes cycle3 {
-    0% {
-        opacity: 0;
-        transform: translateY(35px);
-    }
-
-    50% {
-        opacity: 100;
-        transform: translateY(0);
-    }
-    
-    100% {
-        opacity: 0;
-        transform: translateY(-35px);
-    }
+    animation: cycle 6s linear 2s infinite;
 }
 
 .cycle3 {
-    animation: cycle3 6s linear 4s infinite;
+    animation: cycle 6s linear 4s infinite;
 }
