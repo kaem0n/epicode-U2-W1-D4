@@ -66,13 +66,13 @@ i {
 }
 
 .cycle1 {
-    animation: cycle 6s linear 0s infinite;
+    animation: cycle 6s ease-in-out 0s infinite;
 }
 
 .cycle2 {
-    animation: cycle 6s linear 2s infinite;
+    animation: cycle 6s ease-in-out 2s infinite;
 }
 
 .cycle3 {
-    animation: cycle 6s linear 4s infinite;
+    animation: cycle 6s ease-in-out 4s infinite;
 }
